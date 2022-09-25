@@ -1,0 +1,1 @@
+Repo created to review some concepts of JAVA language and it`s JVM.
