@@ -5,20 +5,20 @@ public class Fluxo {
         metodo1();
         System.out.println("Fim do main");
     }
-    
+
     public static void metodo1() {
         System.out.println("Ini do metodo1");
-        metodo2();
+        try {
+            metodo2();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         System.out.println("Fim do metodo1");
 
     }
 
-    public static void metodo2() {
+    public static void metodo2() throws CustomException {
         System.out.println("Ini do metodo2");
-        for (int i=1; i<=5; i++) {
-            System.out.println(i);
-        }
-        System.out.println("Fim do metodo2");
-
+        throw new CustomException("Fuck you bitch!!!");
     }
 }
